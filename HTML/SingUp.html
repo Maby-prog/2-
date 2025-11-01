@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exclusive - Sign Up</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__posters">
+            <div class="header__poster container">
+                <div class="header__poster-text">
+                    <p>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! <span>ShopNow</span></p>
+                </div>
+                <div class="header__poster-lang">
+                    <p>English</p>
+                    <img src="../Icons/DropDown.png" alt="">
+                </div>
+            </div>
+        </div>
+        <nav class="header__navs container">
+            <div class="header__nav-main">
+                <div class="header__nav-title">
+                    <a href="../HTML/main.html">
+                        <h1>Exclusive</h1>
+                    </a>
+                </div>
+                <div class="header__nav-items">
+                    <ul class="nav__item">
+                        <li><a href="../HTML/main.html">Home</a></li>
+                        <li><a href="../HTML/Contact.html">Contact</a></li>
+                        <li><a href="../HTML/About.html">About</a></li>
+                        <li><a href="../HTML/SingUp.html" class="active">Sign Up</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header__nav-search">
+                <div class="nav__input">
+                    <input type="text" placeholder="What are you looking for?">
+                    <img src="../Icons/search.png" alt="">
+                </div>
+            </div>
+        </nav>
+        <span></span>
+    </header>
+
+    <main class="main">
+        <section class="singup container">
+            <div class="singup__img">
+                <img src="../Images/Side Image.png" alt="Sign Up Illustration">
+            </div>
+            <div class="singup__mains">
+                <div class="singup__title">
+                    <h1>Create an account</h1>
+                    <h4>Enter your details below</h4>
+                </div>
+                <form id="registrationForm" class="singup__input">
+                    <input type="text" id="userName" placeholder="Name" required>
+                    <input type="email" id="userEmail" placeholder="Email or Phone Number" required>
+                    <input type="password" id="userPassword" placeholder="Password" required>
+                </form>
+                <div class="singup__main">
+                    <div class="singup__btns">
+                        <button type="button" id="createAccountBtn" class="create__btn">
+                            <span>Create Account</span>
+                        </button>
+                        <button type="button" class="singup__btn">
+                            <img src="../Icons/Icon-Google.png" alt="Google">
+                            <span>Sign up with Google</span>
+                        </button>
+                    </div>
+                    <div class="singup__item">
+                        <h5>Already have account?</h5>
+                        <a href="#">Log in</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<!-- Модальное окно успешной регистрации -->
+<div id="successModal" class="modal">
+    <div class="modal__content">
+        <div class="modal__success-icon">
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                <circle cx="32" cy="32" r="32" fill="#4CAF50"/>
+                <path d="M26.6667 32L31.3333 36.6667L38.6667 29.3333" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <h2 class="modal__title">Вы зарегестрированы!</h2>
+        <p class="modal__text">Добро пожаловать в Exclusive! Ваша учетная запись успешно создана.</p>
+        <button id="successCloseBtn" class="modal__btn">Продолжить</button>
+    </div>
+</div>
+
+<!-- Модальное окно ошибки -->
+<div id="errorModal" class="modal">
+    <div class="modal__content">
+        <div class="modal__error-icon">
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                <circle cx="32" cy="32" r="32" fill="#f44336"/>
+                <path d="M28 36L32 32L36 28M32 32L36 36M32 32L28 28" stroke="white" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <h2 class="modal__title">Не все поля заполнены</h2>
+        <p class="modal__text">Пожалуйста, заполните все необходимые поля, чтобы продолжить.</p>
+        <button id="errorCloseBtn" class="modal__btn modal__btn--error">Заполнить снова</button>
+    </div>
+</div>
+
+    <footer class="footer">
+        <div class="footer__main container">
+            <div class="footer__main-items">
+                <div class="footer__main-item">
+                    <h3>Exclusive</h3>
+                    <h4>Subscribe</h4>
+                    <p>Get 10% off your first order</p>
+                </div>
+                <div class="footer__item-input">
+                    <input type="email" placeholder="Enter your email">
+                    <div class="footer__item-input-img">
+                        <img src="../Icons/icon-send.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="footer__main-items">
+                <h2>Support</h2>
+                <div class="footer__main-item">
+                    <ul class="footer__item">
+                        <li>
+                            <a href="" class="footer__item-link">
+                                111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="footer__item-link">
+                                exclusive@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="footer__item-link">
+                                +88015-88888-9999
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__main-items">
+                <h2>Account</h2>
+                <div class="footer__main-item">
+                    <ul class="footer__item">
+                        <li>
+                            <a href="" class="footer__item-link">
+                                My Account
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="footer__item-link">
+                                Login / Register
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="footer__item-link">
+                                Cart
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="footer__item-link">
+                                Wishlist
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="footer__item-link">
+                                Shop
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__main-items">
+                <h2>Quick Link</h2>
+                <div class="footer__main-item">
+                    <ul class="footer__item">
+                        <li>
+                            <a href="" class="footer__item-link">
+                                Privacy Policy
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="footer__item-link">
+                                Terms Of Use
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="footer__item-link">
+                                FAQ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="footer__item-link">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__main-extra">
+                <div class="footer__extra-title">
+                    <h3>Download App</h3>
+                </div>
+                <div class="footer__extra-imgs">
+                    <div class="footer__extra-text">
+                        <p>Save $3 with App New User Only</p>
+                    </div>
+                    <div class="footer__extra-img">
+                        <div class="footer__extra-main-img">
+                            <img src="../Images/Qrcode 1.png" alt="">
+                        </div>
+                        <div class="footer__img">
+                            <img src="../Images/GooglePlay.png" alt="">
+                            <img src="../Images/AppStore.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__extra-icons">
+                    <a href="">
+                        <img src="../Icons/Icon-Facebook.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="../Icons/Icon-Twitter.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="../Icons/Icon-Facebook.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="../Icons/icon-instagram.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <span class="footer__span"></span>
+        <div class="footer__text">
+            <img src="../Icons/icon-copyright.png" alt="">
+            <p>Copyright Rimel 2022. All right reserved</p>
+        </div>
+    </footer>
+
+    <script src="singup-modal.js"></script>
+</body>
+</html>
+
+
